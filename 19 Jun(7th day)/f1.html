@@ -1,0 +1,21 @@
+<html>
+<head>
+	<script type="text/javascript">
+		function cpy(){
+			document.f.txt2.value=document.f.txt1.value;
+			}
+		function cls(){
+			document.f.txt1.value=document.f.txt2.value="";
+		}
+	</script>
+	</head>
+<body>
+<form name="f">
+	<table border=2 align="center" style="padding:2px">
+		<tr><td>Enter Text</td><td><input type="text" name="txt1"></td></tr>
+		<tr><td>Copied Text</td><td><input type="text" name="txt2"></td></tr>
+		<tr><td><input type="button" value="Copy" onclick="cpy();"></td><td><input type="button" value="Cancel" onclick="cls();"></td></tr>
+	</table>
+</form>
+</body>
+</html>

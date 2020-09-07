@@ -1,0 +1,23 @@
+<html>	
+<!--
+	Use 24 hour clock format in the system too for the code to work
+-->
+
+<head>
+	<script ype="text/javascript">
+	function display(){
+		d1=new Date();
+			c="am";
+		a=d1.getHours();
+		if (a>12) {
+			a=a-12;
+			c="pm";
+		}
+	
+		document.write(a+":"+d1.getMinutes()+":"+d1.getSeconds()+" "+c);
+	}
+	</script>
+</head>
+<body>
+	<input type="button" value="Show the Time" onclick="display();">
+</body>

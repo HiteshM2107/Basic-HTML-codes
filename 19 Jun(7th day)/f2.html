@@ -1,0 +1,22 @@
+<html>
+<head>
+	<script type="text/javascript">
+		function ctc(){
+			document.f.txt3.value=document.f.txt1.value+" "+document.f.txt2.value;
+			}
+		function cls(){
+			document.f.txt1.value=document.f.txt2.value=document.f.txt3.value="";
+		}
+	</script>
+	</head>
+<body>
+<form name="f">
+	<table border=2 align="center" style="padding:2px">
+		<tr><td>Enter First Name:</td><td><input type="text" name="txt1"></td></tr>
+		<tr><td>Enter Second Name:</td><td><input type="text" name="txt2"></td></tr>
+		<tr><td>Full Name:</td><td><input type="text" name="txt3"></td></tr>
+		<tr><td><input type="button" value="Concatenate" onclick="ctc();"></td><td><input type="button" value="Cancel" onclick="cls();"></td></tr>
+	</table>
+</form>
+</body>
+</html>

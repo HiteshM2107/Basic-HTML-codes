@@ -1,0 +1,26 @@
+<html>
+<head>
+	<script type="text/javascript">
+	function showQualification() {
+		s="";
+		if(document.f.c1.checked)
+			s=s+document.f.c1.value+" ";
+	
+		if(document.f.c2.checked)
+			s=s+document.f.c2.value+" ";
+
+		if(s!=""){					// so that when user selects no checkbox, an empty page is not displayed
+			document.write(s);
+		}
+	}
+	</script>
+</head>
+<body>
+	<form name="f">
+		Qualification<input type="checkbox" name="c1" value="10">10th
+		<input type="checkbox" name="c2" value="12">12th
+		<br><br>
+		<input type="button" value="Show" onclick="showQualification();">
+	</form>
+</body>
+</html>

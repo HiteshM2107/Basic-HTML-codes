@@ -1,0 +1,52 @@
+<html>
+<head>
+	<style type="text/css">
+#menu{
+width:100%;
+}
+ul{
+	list-style:none;
+	padding:0px;
+	margin:0px;
+	color:white;
+}
+ul li{
+	float:left;
+	height: auto;
+	width: 250px;
+	background-color:black;
+	line-height: 40px;
+	text-align:center;
+}
+ul li a{
+	color:orange;
+	list-style:none;
+	display:block;
+	text-decoration: none;
+}
+ul li a:hover{
+	text-decoration: none;
+	line-height:40px;
+	background-color:yellow;
+}
+ul li ul li{
+	display:none;
+}
+ul li:hover ul li{
+	display: block;
+}
+</style>
+</head>
+<body>
+	<div id="menu">
+		<ul><li><a href="">File</a>
+		<ul><li><a href="">New</a></li><li><a href="">Open</a></li><li><a href="">Save</a></li></ul></li>
+		<ul><li><a href="">Edit</a>
+		<ul><li><a href="">New</a></li><li><a href="">Open</a></li><li><a href="">Save</a></li></ul></li>
+		<li><a href="">Format</a></li>
+		<li><a href="">View</a></li>
+		<li><a href="">Help</a></li>
+	</ul>
+	</div>
+</body>
+</html>

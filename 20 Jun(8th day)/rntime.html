@@ -1,0 +1,17 @@
+<html>
+<head>
+	<script type="text/javascript">
+	function changeTime(){
+		d1=new Date();
+		document.f.txt.value=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+		setTimeout('changeTime()',1000);
+	}
+	</script>
+</head>
+<body onload="changeTime();">
+	<h1>Time in Running Mode:</h1>
+<form name="f">
+<input type="text" name="txt">
+</form>
+</body>
+</html>

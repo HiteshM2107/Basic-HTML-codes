@@ -1,0 +1,27 @@
+<html>
+<head>
+	<script type="text/javascript">
+	function check(){
+		if (document.f.user.value=="USER" && document.f.pass.value=="1234") {
+			window.location="welcome.html";
+		}
+		else{
+			document.write("Alert! Incorrect Username or Password")
+		}
+	}
+	function clc(){
+		document.f.user.value="";
+		document.f.pass.value="";
+		}
+	</script>
+</head>
+<body align="center" bgcolor="#ADE866">
+	<h1>Welcome to the Login Page</h1>
+<form name="f">
+	Username: <input type="text" name="user"><br><br>
+	Password: <input type="password" name="pass"><br><br>
+	<input type="button" value="Login" onclick="check();">
+	<input type="button" value="Cancel" onclick="clc();"><br><br>
+	<a href="otp.html">Forgot Password?</a>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+	<script type="text/javascript">
+	function check(){
+		if (document.f.pass.value==document.f.cpass.value) {
+			window.location="user.html"
+		}
+		else{
+			document.write("Please make sure both the passwords match!")
+		}
+
+	}
+	function clc(){
+		document.f.cpass.value="";
+		document.f.pass.value="";
+		}
+	</script>
+</head>
+<body align="center" bgcolor="#ADE866">
+	<form name="f">
+		Enter New Password: <input type="password" name="pass"><br><br>
+		Confirm New Password: <input type="password" name="cpass"><br><br>
+		<input type="button" value="Submit" onclick="check();">
+		<input type="button" value="Cancel" onclick="clc();">
+	</form>
+</body>
+</html>

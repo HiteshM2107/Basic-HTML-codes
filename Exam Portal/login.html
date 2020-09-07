@@ -1,0 +1,29 @@
+<html>
+<head>
+	<script type="text/javascript">
+	function check(){
+		if (document.f.user.value=="ICT" && document.f.pass.value=="javascript") {
+			window.location="ins.html";
+		}
+		else{
+			document.write("Alert! Incorrect Username or Password")
+		}
+	}
+	function clc(){
+		document.f.user.value="";
+		document.f.pass.value="";
+		}
+	</script>
+</head>
+<body bgcolor="#405DE6">
+	<div align="center" style="background-color:white; width:350px; position:absolute; left:500px" >
+		<h1>Welcome Student</h1>
+		<form name="f">
+	Username: <input type="text" name="user"><br><br>
+	Password: <input type="password" name="pass"><br><br>
+	<input type="button" value="Login" onclick="check();">
+	<input type="button" value="Cancel" onclick="clc();"><br><br>
+		</form>
+	</div>
+</body>
+</html>

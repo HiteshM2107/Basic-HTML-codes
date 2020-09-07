@@ -1,0 +1,21 @@
+<html>
+<head>
+<script type="text/javascript">
+function showFees(){
+	document.f.fees.value=document.f.course.value;
+}
+</script>
+</head>
+<body>
+	<form name="f">
+		Course: 
+		<select name="course" onchange="showFees();">
+			<option value="">---Select Course---</option>
+			<option value="150000">BTECH</option>
+			<option value="50000">BCA</option>
+			<option value="60000">MCA</option>
+		</select><br><br>
+		Fees: <input type="text" name="fees">
+	</form>
+</body>
+</html>

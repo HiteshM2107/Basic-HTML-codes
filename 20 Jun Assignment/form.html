@@ -1,0 +1,73 @@
+<html>
+<head>
+	<script type="text/javascript">
+	function show(){ 
+		s="";
+		t=0;
+		s=s+"Email: "+document.f.email.value;
+		s=s+"	Qualification: "
+		if (document.f.c1.checked) {
+			s=s+document.f.c1.value+" ";
+			t=1;
+		}
+		if (document.f.c2.checked) {
+			s=s+document.f.c2.value+" ";
+			t=1;
+		}
+		if (document.f.c3.checked) {
+			s=s+document.f.c3.value+" ";
+			t=1;
+		}
+		if(t==0)
+			s=s+"NONE";
+
+
+		s=s+"	Country: "+document.f.country.value;
+		s=s+"	Address: "+document.f.address.value;
+		if (document.f.gender[0].checked)
+			s=s+"	Gender: "+document.f.gender[0].value;
+		else if (document.f.gender[1].checked) 
+				s=s+"	Gender: "+document.f.gender[1].value;
+		
+		document.write(s);
+	}
+		function clc(){
+			document.f.email.value="";
+			document.f.pass.value="";
+			document.f.cpass.value="";
+			document.f.country.value="";
+			document.f.address.value="";
+			if(document.f.gender[0].checked)
+				document.f.gender[0].checked=false;
+			if(document.f.gender[1].checked)
+				document.f.gender[1].checked=false;
+			document.f.c1.checked=false;
+			document.f.c2.checked=false;
+			document.f.c3.checked=false;
+
+				
+		}
+		</script>
+</head>
+<body>
+	<h1>Register Here</h1><hr>
+	<form name="f">
+		E-mail ID: <input type="text" name="email"><br><br>
+		Password: <input type="password" name="pass"><br><br>
+		Confirm Password: <input type="password" name="cpass"><br><br>
+		Qualification: <input type="checkbox" name="c1" value="10th">10<sup>th</sup><input type="checkbox" name="c2" value="12th">12<sup>th</sup><input type="checkbox" name="c3" value="Others">Other<br><br>
+		Country<select name="country">
+		<option value="">---Select Country---</option>
+		<option value="China">China</option>
+		<option value="India">India</option>
+		<option value="Japan">Japan</option>
+		<option value="UK">UK</option>
+		<option value="USA">USA</option>
+	</select><br><br>
+		Address: <textarea name="address"></textarea><br><br>
+		Gender: <input type="radio" name="gender" value="Male">Male
+		<input type="radio" name="gender" value="Female">Female <br><br>
+		<input type="button" value="Submit" onclick="show();"> <input type="button" value="Cancel" onclick="clc();">
+	</form>
+</body>
+</html>

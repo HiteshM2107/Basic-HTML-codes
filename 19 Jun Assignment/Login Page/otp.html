@@ -1,0 +1,20 @@
+<html>
+<head>
+<script type="text/javascript">
+function ck(){
+	if (document.f.otp.value==parseInt(parseInt(document.f.mob.value)/1000000)) {
+		window.location="res.html";
+	}
+	else{
+		document.write("Please enter the correct OTP.")
+	}
+}
+</script>
+</head>
+<body align="center" bgcolor="#ADE866">
+	<form name='f'>
+	Enter registered mobile number: <input type="Text" name="mob"><br><br>
+	Enter OTP: <input type="password" name="otp"><br><br>
+	<input type="button" value="Submit" onclick="ck();"> <input type="button" value="Cancel">
+</body>
+</html>

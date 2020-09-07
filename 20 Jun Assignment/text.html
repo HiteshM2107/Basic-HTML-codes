@@ -1,0 +1,53 @@
+<html>
+<head>
+	<script type="text/javascript">
+	function copyText(){
+		s=document.getElementById("para");
+		s.innerHTML=document.f.txt2.value;
+		s.style.color=document.f.Color.value;
+		s.style.fontSize=document.f.Size.value;
+		
+	}
+	</script>
+</head>
+<body>
+	<form name="f">
+		<p id="para">Hello</p>
+		<textarea name="txt2"></textarea><br><br>
+			<select name="Color">
+			<option value="">---Select Color---</option>
+			<option value="red">Red</option>
+			<option value="orange">Orange</option>
+			<option value="black">Black</option>
+			<option value="yellow">Yellow</option>
+			<option value="green">Green</option>
+			<option value="blue">Blue</option>
+			<option value="indigo">Indigo</option>
+		</select>
+		<input type="button" value="Set" onclick=""><br><br>
+		<select name="Size">
+			<option value="">---Select Size---</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+			<option value="13">13</option>
+			<option value="14">14</option>
+			<option value="15">15</option>
+			<option value="16">16</option>
+			<option value="17">17</option>
+			<option value="18">18</option>
+			<option value="19">19</option>
+			<option value="20">20</option>
+		</select>
+		<input type="button" value="Set" onclick=""><br><br>
+		<input type="button" value="Add Text" onclick="copyText();">
+				<br><br>
+				
+	</form>
+</body>
+</html>

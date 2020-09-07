@@ -1,0 +1,21 @@
+<html>
+<head>
+	<script type="text/javascript">
+	function status(){
+		if (document.frm.r1[0].checked) {
+			document.write("You are selected: "+document.frm.r1[0].value);
+			}
+		if (document.frm.r1[1].checked) {
+			document.write("You are selected: "+document.frm.r1[1].value);
+			}
+	}
+	</script>
+</head>
+<body>
+	<form name="frm">
+		<h1>Are You Indian ?</h1>
+		<input type="radio" name="r1" value="YES" onclick="status();">Yes
+		<input type="radio" name="r1" value="NO" onclick="status();">No
+	</form>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+<head>
+<script type="text/javascript">
+function change(){
+	n=document.getElementById("para"); //we can also write document.getElementById("para").innerHTML="Text using DOM"; 
+	n.innerHTML="Text using DOM";
+	n.style.color="red";
+	n.style.fontSize="38";
+}
+</script>
+<body>
+<p id="para">This is a Normal Text</p>
+<input type="button" value="Change Text" onclick="change();">
+</body>
+</html>

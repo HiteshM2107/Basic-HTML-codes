@@ -1,0 +1,38 @@
+<html>
+<head>
+	<script type="text/javascript">
+		function add(){
+			document.f.txt3.value=parseInt(document.f.txt1.value)+parseInt(document.f.txt2.value);
+			}
+		function sub(){
+			document.f.txt3.value=parseInt(document.f.txt1.value)-parseInt(document.f.txt2.value);
+			}
+		function mul(){
+			document.f.txt3.value=parseInt(document.f.txt1.value)*parseInt(document.f.txt2.value);
+			}
+		function div(){
+			document.f.txt3.value=parseInt(document.f.txt1.value)/parseInt(document.f.txt2.value);
+			}
+		function mod(){
+			document.f.txt3.value=parseInt(document.f.txt1.value)%parseInt(document.f.txt2.value);
+			}
+		function cls(){
+			document.f.txt1.value=document.f.txt2.value=document.f.txt3.value="";
+		}
+	</script>
+	</head>
+<body>
+<form name="f">
+	<table border=1 align="center" style="padding:2px">
+		<tr align="center"><td colspan=2>CALCULATOR</td></td>
+		<tr><td>Enter First Number:</td><td><input type="text" name="txt1"></td></tr>
+		<tr><td>Enter Second Number:</td><td><input type="text" name="txt2"></td></tr>
+		<tr><td>Result:</td><td><input type="text" name="txt3"></td></tr>
+		<tr><td><input type="button" value="+" onclick="add();">            <input type="button" value="-" onclick="sub();"></td>
+			<td><input type="button" value="*" onclick="mul();">            <input type="button" value="/" onclick="div();"></td>
+		</tr>
+		<tr><td><input type="button" value="%" onclick="mod();"><td colspan="3"><input type="button" value="Clear" onclick="cls();"></td></td></tr>
+	</table>
+</form>
+</body>
+</html>

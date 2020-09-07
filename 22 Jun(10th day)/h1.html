@@ -1,0 +1,20 @@
+<html>
+<head>
+	<script type="text/javascript">
+	function show(){
+		alert(document.f.r.value);
+	}
+	</script>
+<body>
+	<form name="f">
+		<input type="range" min=1 max=20 name="r">
+		<input type="button" value="Show" onclick="show();">
+		<input type="color">
+		<input type="date"><br><br>
+		Email: <input type="email"><br>
+		<input type="text" required><br> 	<!--required is used to make an entry mandatory-->
+		<input type="number" placeholder="Increase Number" step="2"><br>		<!-- type="number" is used to take in only numbers and nothing else-->
+		<input type="submit" value="Submit">	
+	</form>
+</body>
+</html>
